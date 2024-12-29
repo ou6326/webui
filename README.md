@@ -4,15 +4,11 @@
 
 # WebUI v2.5.0-beta.3
 
-[build-status]: https://img.shields.io/github/actions/workflow/status/webui-dev/webui/ci.yml?branch=main&style=for-the-badge&logo=githubactions&labelColor=414868&logoColor=C0CAF5
-[last-commit]: https://img.shields.io/github/last-commit/webui-dev/webui?style=for-the-badge&logo=github&logoColor=C0CAF5&labelColor=414868
-[release-version]: https://img.shields.io/github/v/tag/webui-dev/webui?style=for-the-badge&logo=webtrees&logoColor=C0CAF5&labelColor=414868&color=7664C6
-[license]: https://img.shields.io/github/license/webui-dev/webui?style=for-the-badge&logo=opensourcehardware&label=License&logoColor=C0CAF5&labelColor=414868&color=8c73cc
+[last-commit]: https://img.shields.io/github/last-commit/ou6326/webui?style=for-the-badge&logo=github&logoColor=C0CAF5&labelColor=414868
+[license]: https://img.shields.io/github/license/ou6326/webui?style=for-the-badge&logo=opensourcehardware&label=License&logoColor=C0CAF5&labelColor=414868&color=8c73cc
 
-[![][build-status]](https://github.com/webui-dev/webui/actions?query=branch%3Amain)
-[![][last-commit]](https://github.com/webui-dev/webui/pulse)
-[![][release-version]](https://github.com/webui-dev/webui/releases/latest)
-[![][license]](https://github.com/webui-dev/webui/blob/main/LICENSE)
+[![][last-commit]](https://github.com/ou6326/webui/pulse)
+[![][license]](https://github.com/ou6326/webui/blob/main/LICENSE)
 
 > Use any web browser or WebView as GUI, with your preferred language in the backend and modern web technologies in the frontend, all in a lightweight portable library.
 
@@ -20,10 +16,7 @@
 
 </div>
 
-## Download
-
-- [Latest Stable Release](https://github.com/webui-dev/webui/releases)
-- [Nightly Build](https://github.com/webui-dev/webui/releases/tag/nightly)
+Forked from project [webui](https://github.com/webui-dev/webui)
 
 ## Contents
 

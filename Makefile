@@ -90,3 +90,14 @@ clean:
 	@- del *.dll >nul 2>&1
 	@- del *.lib >nul 2>&1
 	@- echo Done.
+
+object:
+	@- mkdir dist >nul 2>&1
+	@- cd $(MAKEDIR)/dist
+	@echo Build CivetWeb Library (MSVC Release Static)...
+	@cl /Zl $(CIVETWEB_BUILD_FLAGS) $(CIVETWEB_DEFINE_FLAGS)
+#   Clean
+	@- del *.pdb >nul 2>&1
+	@- del *.ilk >nul 2>&1
+	@- del *.exp >nul 2>&1
+	@echo Done.

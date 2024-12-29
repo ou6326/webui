@@ -105,6 +105,8 @@ release: --release
 
 clean: --clean-$(PLATFORM)
 
+object: --object
+
 # == 2.1 INTERNAL TARGETS =====================================================
 
 --debug:
@@ -198,3 +200,21 @@ endif
 	&& del *.pdb >nul 2>&1 \
 	&& del *.lib >nul 2>&1 \
 	&& del *.exp >nul 2>&1
+
+--object:
+# Create build directory
+ifeq ($(PLATFORM),windows)
+	@mkdir "$(BUILD_DIR)" >nul 2>&1 ||:
+else
+	@mkdir -p "$(BUILD_DIR)"
+endif
+#	Build macOS WKWebView
+ifeq ($(DETECTED_OS),Darwin)
+	@cd "$(BUILD_DIR)" \
+	&& echo "Build WebUI Objective-C WKWebKit ($(CC) $(TARGET) release)..." \
+	&& $(CC) $(TARGET) $(WKWEBKIT_BUILD_FLAGS) -Os
+endif
+#	Static Release
+	@cd "$(BUILD_DIR)" \
+	&& echo "Build CivetWeb library ($(CC) $(TARGET) release static)..." \
+	&& $(CC) $(TARGET) $(CIVETWEB_BUILD_FLAGS) $(CIVETWEB_DEFINE_FLAGS) -Os
